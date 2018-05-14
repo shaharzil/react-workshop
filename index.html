@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Build an application from the ground up,using best practices and advanced techniques">
+	<meta name="keywords" content="React">
+	<meta name="author" content="">
+	<meta property="og:image" content="img/reactLogo.png" />
+	<!-- Add Your favicon here -->
+	<!--<link rel="icon" href="img/favicon.ico">-->
+
+	<title>React Workshop - State of the art React training</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font.css">
+	<!-- Animation CSS -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Custom styles for this template -->
+	<link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Corben:bold' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/my.css" rel="stylesheet">
+
+	<!--****************Activate this if using discount code******************-->
+	<!--<script >-->
+	<!--function checkCode(){-->
+	<!--var discountCode = document.querySelector("#discount").value;-->
+	<!--console.log(discountCode);-->
+	<!--if (discountCode =='node2016') {-->
+	<!--var elPayment1 = document.querySelector("#payment1");-->
+	<!--elPayment1.classList.add("hidePrice");-->
+	<!--var elPayment2 = document.querySelector("#payment2");-->
+	<!--elPayment2.classList.remove("hidePrice");-->
+	<!--}-->
+	<!--}-->
+
+
+	<!--</script>-->
+	<link rel='shortcut icon' href='img/reactLogo.png' type='image/x-icon' />
+</head>
+
+<body id="page-top" onload="init()">
+	<div class="navbar-wrapper">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					    aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a id="nav-contact-us" class="navbar-brand contact-btn" href="#contact">Contact Us</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a class="page-scroll" href="#page-top">Home</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#you">You</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#staff">Staff</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#tickets">Tickets</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#syllabus">Syllabus</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#contact">Contact</a>
+						</li>
+						<!--<li><a class="page-scroll" href="mailto:admin@misterbit.co.il?Subject=Angular2%20workshop"
+                           target="_blank">Contact2</a></li>-->
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+		<!--<ol class="carousel-indicators">-->
+		<!--<li data-target="#inSlider" data-slide-to="0" class="active"></li>-->
+		<!--<li data-target="#inSlider" data-slide-to="1"></li>-->
+		<!--</ol>-->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="header-back one">
+					<div class="angular-heading">
+						<!--bounces In on page load -->
+						<div class="heading-content">
+							<h1 class="angular-heading-text" style="font-size: 8vw;">
+								Learn ReactJS
+								<span class="slogan">get the job done and go home early
+									<span/>
+									<p>Next workshop: 21 May 2018</p>
+									<a id="header-contact-us" class="navbar-brand contact-btn-header" href="#contact">Contact Us</a>
+								</h1>
+							<img class="angular-img" src="img/reactLogo.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<div class=" text-center navy-section" style="margin: 0">
+		<h1>Build an application from the ground up, using best practices and advanced techniques</h1>
+
+	</div>
+
+	<!--Who is the workshop for-->
+	<section id="testimonials" class="navy-section testimonials" style="margin: 0">
+
+		<div class="container">
+			<div class="row">
+				<div class="text-center wow zoomIn mw800">
+					<!--<i class="fa fa-comment big-icon"></i>-->
+					<!--<h1>
+                    Who is it for?
+                </h1>-->
+					<div id="you">
+						<p class="fs12">
+							Our
+							<span class="navy">React workshop</span> is a great choice for
+							<span class="navy">professional developers</span> who would like to jump - head first, into the exciting world of frontend development
+							with React.
+						</p>
+						<br>
+						<h3>
+							<mark>Is it for me?</mark>
+						</h3>
+						<p>
+							If you're an
+							<mark>frontend developer</mark>
+							, you will have all the knowledge and tools to upgrade to modern React.
+						</p>
+						<p>
+							If you're a
+							<mark>Java/.NET developer</mark>
+							, we believe that you are making a
+							<b>great decision</b>,
+							<em>prepare yourself for a great ride.</em>
+						</p>
+						<p>
+							<i>Students must have working knowledge of HTML and JavaScript, and another DOM manipulation library such as jQuery,
+								or experience working on server-side web development (Java, PHP, etc).
+							</i>
+						</p>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!--what will I learn-->
+	<section class="what-learn container">
+		<div class="row ">
+			<div class="text-center col-lg-12">
+				<div class="navy-line"></div>
+				<h1>What Will I Learn?</h1>
+
+				<div class="mw540">
+					<p>
+						We will review the tools every
+						<b class="white">frontend developer </b>should know, and dive into implementing a scalable React application.
+					</p>
+
+					<p>
+						Weather you've worked with other frameworks, or not, the strength of React will amaze you.
+					</p>
+					<br>
+
+					<p>
+						You will experience that
+						<b class="white">React embraces</b>:
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col-md-3 text-center wow fadeInLeft">
+				<div>
+					<i class="fa fa-file-code-o features-icon"></i>
+
+					<h2>Using ES6 for better Javascript</h2>
+				</div>
+				<div class="m-t-lg">
+					<i class="fa fa-code-fork features-icon"></i>
+
+					<h2>Using Modern Modular CSS</h2>
+				</div>
+				<div class="m-t-lg">
+					<i class="fa fa-user features-icon"></i>
+
+					<h2>Single page, progressive web applications</h2>
+				</div>
+			</div>
+			<div class="col-md-6 text-center  wow zoomIn">
+				<img src="img/vueCoat.jpg" alt="Super React" class="img-responsive">
+			</div>
+			<div class="col-md-3 text-center wow fadeInRight">
+				<div>
+					<i class="fa fa-keyboard-o features-icon"></i>
+
+					<h2>The magic and powers of reactivity</h2>
+				</div>
+				<div class="m-t-lg">
+					<i class="fa fa-play features-icon"></i>
+
+					<h2>State management, Flux, Redux and Mobx </h2>
+				</div>
+				<div class="m-t-lg">
+					<i class="fa fa-code features-icon"></i>
+
+					<h2>Best Practices for modern frontend development
+					</h2>
+				</div>
+			</div>
+
+		</div>
+		<br>
+		<br>
+
+		<div class="row container">
+			<div class="text-center col-lg-12">
+				<p>Warranty: Getting a hold of those super-powers will enable you to build
+					<b class="white">outstanding frontends!</b>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!--The Trainer-->
+	<section id="staff" class="gray-section team">
+		<div class="container">
+			<div class="row m-b-lg">
+				<div class="col-lg-12 text-center">
+					<div class="navy-line"></div>
+					<h1>The Staff</h1>
+					<!--<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>-->
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-sm-4 wow fadeInLeft">
+					<div class="team-member">
+						<img src="img/Elad.jpg" class="img-responsive img-circle img-small" alt="">
+						<h4>
+							<span>Elad</span> Frizi</h4>
+
+						<p>Frontend developer, and
+							<a target="_blank" href="http://www.coding-academy.org/" class="navy-link">Coding Academy</a> Staff</p>
+						<ul class="list-inline social-icon">
+							<li>
+								<a href="https://www.linkedin.com/in/eladfrizi/" target="_blank">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="team-member wow fadeInDown">
+						<img src="img/YaronBiton.jpg" class="img-responsive img-circle img-small" alt="">
+						<h4>
+							<span>Yaron</span> Biton</h4>
+
+						<p>Professional trainer ; misterBIT CTO ; Building the web for over 20 years ; Deep understanding of web technologies,
+							aspects and evolvement ; Expert in building powerful, scalable and secure software ; Mamram graduate
+						</p>
+						<ul class="list-inline social-icon">
+							<li>
+								<a href="http://il.linkedin.com/in/yaronbiton" target="_blank">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="team-member wow fadeInRight">
+						<img src="img/Shahar.jpg" class="img-responsive img-circle img-small" alt="">
+						<h4>
+							<span>Shahar</span> Zilberman</h4>
+
+						<p>Frontend developer, and
+							<a target="_blank" href="http://www.coding-academy.org/" class="navy-link">Coding Academy</a> Staff</p>
+
+
+						<ul class="list-inline social-icon">
+							<li>
+								<a href="https://www.linkedin.com/in/shahar-zilberman-a66453155/" target="_blank">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="row">
+
+				<div class="col-sm-4 wow fadeInLeft">
+					<div class="team-member">
+						<img src="img/Roni.jpg" class="img-responsive img-circle img-small" alt="">
+						<h4>
+							<span>Roni</span> Krakover</h4>
+
+						<p>Frontend developer, Project manager and misterBit Chief!</p>
+						<ul class="list-inline social-icon">
+							<li>
+								<a href="https://il.linkedin.com/in/ronikrakover" target="_blank">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="team-member wow fadeInRight">
+						<img src="img/alon.png" class="img-responsive img-circle img-small" alt="">
+						<h4>
+							<span>Alon</span> Danoch</h4>
+
+						<p>Senior Fullstack Web Developer and more. with varied experience and knowledge in many programming environments and
+							languages. specialize in UX/UI and Web architecture.
+
+						</p>
+						<ul class="list-inline social-icon">
+							<li>
+								<a href="https://www.linkedin.com/in/alon-danoch-7916b929/" target="_blank">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="team-member wow fadeInRight">
+						<img src="img/Chen.jpg" class="img-responsive img-circle img-small" alt="">
+						<h4>
+							<span>Chen</span> Aviv</h4>
+
+						<p>Frontend developer, and
+							<a target="_blank" href="http://www.coding-academy.org/" class="navy-link">Coding Academy</a> Staff</p>
+						<ul class="list-inline social-icon">
+							<li>
+								<a href="https://www.linkedin.com/in/chen-aviv-63b2b8146/" target="_blank">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+						<p>
+							We are here to help you
+							<b> make the best </b> of your coding time!
+						</p>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--<section id="Logistics" class="navy-section" style="margin-top: 0">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center wow zoomIn">
+                <i class="fa fa-cubes big-icon"></i>
+
+                <h1>Logistics</h1>
+
+                <div class="text-left logistics-p">
+                    <p>
+                        Note: Dates shown on this list are for sessions that are delivered in Israel and in Hebrew, for other languages and locations, please contact us to coordinate.
+                    </p>
+
+                    <p>
+                        Prepare for hands-on work - bring your laptop with you
+                        (No laptop? No worries, we can provide one for you, just let us know in advance)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+	<section class="timeline gray-section">
+		<div class="container" id="syllabus">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="navy-line"></div>
+					<h1>The Plan</h1>
+					<br>
+
+					<div class="col-lg-12 text-left plan-content">
+						<p class="the-plan-p">
+							Javascript is everywhere today and writing large scale applications with it has been through much progress.
+						</p>
+						<br>
+						<!--<p class="the-plan-p">
+							In order to use Frameworks such as Angular to build large scale apps for future generations, one will need to use modern
+							Javascript, apply many best practices and adhere to techniques such as: TypeScript, Reactive programming using Observables,
+							Immutability and more.
+						</p>-->
+
+						<p class="the-plan-p">
+							This workshop will take you through power sessions and get our hands on the practical usage of those tools.
+						</p>
+
+						<!--<p class="the-plan-p">
+                        We invite you to take a deep breath before taking a deep dive into the exciting world of Web
+                        Technologies.
+                    </p>-->
+
+						<div class="the-plan-p">
+							<hr>
+							<h4>Building Modern Apps with React</h4>
+
+							<!--<p class="mt10"><strong>This workshop has 3 parts. </strong>We recommend participating in all 3, but you are free to choose the ones
+								that best fit your needs:</p>-->
+							<!--<h4>1 - Intro to Angular Techs (1 Day)</h4>-->
+							<p>
+								Getting a deep look into Components, Services, Forms, Routing, Http, Component lifecycle, Content projections, Dynamic components,
+								project structuring, debugging and testing, change detection, data flows and more.
+							</p>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="row features-block">
+				<div class="col-lg-12" id="syllabus-btn" onclick="toggleSyllabus()">
+					<div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-file-text"></i>
+							</div>
+
+							<div class="vertical-timeline-content">
+								<h2>React Workshop</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12" id="syllabus-text">
+					<div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-briefcase"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>Modern Frontend development and React</h2>
+								<div class="syllabusData">
+									<p>
+										Review the current state of frontend development and single page web applications, task runners, 
+										module loaders, ES6, Modular CSS & SASS, and setup our initial project
+									</p>
+								</div>
+								<span class="vertical-date"> Module 1
+									<br/>
+									<small>Kicking Off</small>
+								</span>
+							</div>
+
+						</div>
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-file-text"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>Composing an app from components</h2>
+								<div class="syllabusData">
+									<p>
+										Introducing the component as the core primitive building block of the application
+									</p>
+								</div>
+								<span class="vertical-date"> Module 1
+									<br/>
+									<small>Setting the ground</small>
+								</span>
+							</div>
+						</div>
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-file-text"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>Component's Communication</h2>
+								<div class="syllabusData">
+									<p>
+										Let's review different ways to communicate
+									</p>
+								</div>
+								<span class="vertical-date"> Module 1
+									<br/>
+									<small>Understanding Components</small>
+								</span>
+							</div>
+						</div>
+
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-file-text"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>Routing and Navigation</h2>
+								<div class="syllabusData">
+									<p>
+										Unlock the power of the component's router and go different places
+									</p>
+								</div>
+								<span class="vertical-date"> Module 2
+									<br/>
+									<small>Route to other dimensions </small>
+								</span>
+							</div>
+						</div>
+
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-cogs"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>Having Children</h2>
+								<div class="syllabusData">
+									<p>Working with children to make reusable containers</p>
+								</div>
+								<span class="vertical-date"> Module 2
+									<br/>
+									<small>Injecting stuff</small>
+								</span>
+							</div>
+						</div>
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-file-text"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+
+								<h2>Life cycle hooks</h2>
+								<div class="syllabusData">
+									<p>
+										Tap into key moments of your component life
+									</p>
+								</div>
+								<span class="vertical-date"> Module 3
+									<br/>
+									<small> Hooking it up</small>
+								</span>
+							</div>
+						</div>
+
+
+
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-cogs"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>Error Boundaries</h2>
+								<div class="syllabusData">
+									<p>
+										Use React super powers to build powerful applications
+									</p>
+								</div>
+								<span class="vertical-date"> Module 4
+									<br/>
+									<small>Structure Matters</small>
+								</span>
+							</div>
+						</div>
+
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-cogs"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>Understanding Reactivity</h2>
+								<div class="syllabusData">
+									<p>Understand how to work with state correctly to build consistent apps</p>
+								</div>
+								<span class="vertical-date"> Module 5
+									<br/>
+									<small>Deep Into Reactivity</small>
+								</span>
+							</div>
+						</div>
+
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-cogs"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>Server Communication</h2>
+								<div class="syllabusData">
+									<p>
+										Awake our frontend by communicating with servers
+									</p>
+								</div>
+								<span class="vertical-date"> Module 5
+									<br/>
+									<small>Taliking to Servers</small>
+								</span>
+							</div>
+						</div>
+
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-cogs"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>State Management with Redux / Mobx </h2>
+								<div class="syllabusData">
+									<p>
+										State Management with Redux / Mobx </p>
+								</div>
+								<span class="vertical-date"> Module 5
+									<br/>
+									<small>Detecting Changes</small>
+								</span>
+							</div>
+						</div>
+
+						<div class="vertical-timeline-block">
+							<div class="vertical-timeline-icon navy-bg">
+								<i class="fa fa-cogs"></i>
+							</div>
+
+							<div class="vertical-timeline-content" onclick="toggleSyllabusItem(this)">
+								<h2>A brave look at the future </h2>
+								<div class="syllabusData">
+									<p>
+										The frontend scene is changing, as HTML, CSS and Javascript are used to build web apps, server side, mobile, desktop, robots and what not. In this session we will look at different standards,
+										 libraries and tools, and how React plays part in the future of frontend.
+									</p>
+									<p>
+										In this session we will look at different standards, libraries and tools, and how React will play part in the future of frontend.
+									</p>
+								</div>
+								<span class="vertical-date"> Module 6
+									<br/>
+									<small>Gazing at the future</small>
+								</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<!--About misterBIT-->
+
+	<section id="about" class="container services">
+		<div class="row text-center">
+			<div class="col-sm-4">
+				<i class="fa fa-wrench features-icon"></i>
+				<h4 class="uppercase">Get the job done</h4>
+				<div>
+					<p>We are putting a lot of effort to make this workshop the best it can be, and capture the most important ideas and coding
+						practices in modern frontend development. We help developers use the newly-born-super-powers of web technologies to
+						get the job done. Expect to leave this workshop with a heap of useful examples and resources.
+					</p>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<i class="fa fa-users features-icon"></i>
+				<h4 class="uppercase">Get Ready</h4>
+
+				<div>
+					<p>We will rely on the foundations of HTML, CSS and Javascript, they will be the dance floor upon which we will play with
+						React and friends, if you are converting from other technologies, we suggest you (1) get excited and (2) get a hold of
+						those technologies. If you need some help and guidance, just let us know.</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<i class="fa fa-scissors features-icon"></i>
+				<h4 class="uppercase">Tailored training</h4>
+				<div>
+					<p>We have helped companies build up their teams and knowledge for over twenty years and helped companies build up their
+						teams and knowledge for over twenty years. We also provide on-site tailored sessions designed to meet your special
+						needs, please contact us for any question, or provide your details below and we will get back to you shortly.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="featured-clients ">
+		<div class="row">
+			<div class="navy-line"></div>
+			<div class="col-lg-12 text-center">
+				<!--<div class="navy-line"></div>-->
+				<h1 class="uppercase">Featured
+					<span class="navy">clients</span>
+				</h1>
+			</div>
+		</div>
+		<div class="row companies-logos-container ptb3">
+			<div class="grayscale">
+				<img src="img/clients/Taptica-logo.png" class="img-responsive" alt="taptica logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/nvidia_logo.png" class="img-responsive" alt="Nvidia logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/at&t.svg" class="img-responsive" alt="at&t logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/reskill-logo.png" class="img-responsive" alt="reskill logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/bmc.png" class="img-responsive" alt="bmc logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/ebay-logo.png" class="img-responsive " alt="ebay logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/walla.png" class="img-responsive" alt="footBoss logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/gemalto_logo.png" class="img-responsive" alt="gemalto logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/supersonic-logo.png" class="img-responsive" alt="supersonic logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/hp.png" class="img-responsive" alt="hp logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/spotoption.png" class="img-responsive" alt="startapp logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/inkodHypera-logo.png" class="img-responsive" alt="inkod Hypera logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/jivyGroup.png" class="img-responsive" alt="jivy Group logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/kaltura_logo.png" class="img-responsive" alt="kaltura logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/cyberark.png" class="img-responsive" alt="vtool logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/nice-actimize-logo.PNG" class="img-responsive" alt="actimize logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/poalim.png" class="img-responsive" alt="poalim logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/orbotech.png" class="img-responsive" alt="supersonic logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/audioCodes_logo.png" class="img-responsive" alt="audioCodes logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/sapiens-logo.png" class="img-responsive" alt="sapiens logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/startapp-logo.png" class="img-responsive" alt="startapp logo">
+			</div>
+			<div class="grayscale">
+				<img src="img/clients/attunity.png" class="img-responsive" alt="vtool logo">
+			</div>
+
+
+		</div>
+	</section>
+	<section id="contact" class="gray-section contact-section">
+		<div class="container contact" id="contact-us">
+			<div class="row m-b-lg">
+				<div class="col-lg-12 text-center">
+					<div class="navy-line"></div>
+					<h1>Contact Us</h1>
+					<p>
+						<!-- <a href="mailto:admin@misterBit.co.il" target="_top">Send Mail</a> -->
+						and we will be with you shortly
+					</p>
+
+				</div>
+			</div>
+
+			<div class="row m-b-lg pl1em">
+				<form id="contactForm">
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									Your Email has been successfully submitted and we will get in touch with you shortly
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" class="form-control" id="name" placeholder="Name" required="">
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" placeholder="Email" required="">
+			</div>
+
+			<div class="form-group">
+				<label for="phone">Phone</label>
+				<input type="tel" class="form-control" id="phone" placeholder="Phone" required="">
+			</div>
+			<div class="form-group">
+				<label for="message">Message</label>
+				<textarea class="form-control" rows="5" id="message" placeholder="Message" required=""></textarea>
+			</div>
+			<div class="col-lg-12 text-center">
+				<button type="submit" class="btn btn-primary btn-submit" id="contactSubmit">Send</button>
+			</div>
+			</form>
+			<!-- <div>
+					<div class="" id="thank-you" style="display: none; text-align: center">
+						<h2>Thanks! we will be in touch</h2>
+					</div>
+				</div> -->
+		</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+				<p>
+					<strong>2016 &copy; misterBIT</strong>
+					<br/> State of the art training, consulting & development.</p>
+				Tel: 054-6694775 |
+				<a href="http://misterBIT.co.il" target="_blank">misterBIT website</a> |
+				<a href="http://coding-academy.org" target="_blank">Coding-Acedemy website</a>
+				<br> tags: React, israel
+			</div>
+		</div>
+
+	</footer>
+
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/inspinia.js"></script>
+	<script src="js/main.js"></script>
+
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-9200890-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+</body>
+
+</html>

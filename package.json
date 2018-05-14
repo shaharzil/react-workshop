@@ -1,0 +1,31 @@
+{
+  "name": "Angular2WS",
+  "version": "1.0.0",
+  "description": "Build an application from the ground up,using best practices and advanced techniques",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server",
+    "less": "lessc ./less/my.less ./css/my.css && lessc ./less/style.less ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:itayamar/angular-workshop.git"
+  },
+  "keywords": [
+    "angular 2",
+    "angular 2.0"
+  ],
+  "author": "misterBit",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5",
+    "less-font-face": "^1.0.1"
+  },
+  "devDependencies": {
+    "less": "^2.7.1",
+    "lite-server": "^2.2.2"
+  }
+}

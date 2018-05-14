@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Build an application from the ground up,using best practices and advanced techniques">
+    <meta name="keywords" content="Angular 2,Angular 2.0, אנגולר 2">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>סדנת אנגולר 2 למפתחים</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font.css">
+    <!-- Animation CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link href="css/style-heb.css" rel="stylesheet">
+    <link href="css/my.css" rel="stylesheet">
+
+    <!--****************Activate this if using discount code******************-->
+    <!--<script >-->
+    <!--function checkCode(){-->
+    <!--var discountCode = document.querySelector("#discount").value;-->
+    <!--console.log(discountCode);-->
+    <!--if (discountCode =='node2016') {-->
+    <!--var elPayment1 = document.querySelector("#payment1");-->
+    <!--elPayment1.classList.add("hidePrice");-->
+    <!--var elPayment2 = document.querySelector("#payment2");-->
+    <!--elPayment2.classList.remove("hidePrice");-->
+    <!--}-->
+    <!--}-->
+
+
+    <!--</script>-->
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/>
+
+</head>
+<body id="page-top" dir="rtl">
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://angularworkshop.co.il">Angular2 Workshop</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="http://angularworkshop.co.il">Home</a></li>
+                    <li><a class="page-scroll" href="http://angularworkshop.co.il#you">You</a></li>
+                    <li><a class="page-scroll" href="http://angularworkshop.co.il#staff">Staff</a></li>
+                    <li><a class="page-scroll" href="http://angularworkshop.co.il#syllabus">Syllabus</a></li>
+                    <li><a class="page-scroll" href="http://angularworkshop.co.il#tickets">Tickets</a></li>
+                    <li><a class="page-scroll" href="mailto:admin@misterbit.co.il?Subject=Angular2%20workshop"
+                           target="_blank">Contact</a></li>
+                    <li><a class="page-scroll" href="http://angularworkshop.co.il/hebrew-blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <!--<ol class="carousel-indicators">-->
+    <!--<li data-target="#inSlider" data-slide-to="0" class="active"></li>-->
+    <!--<li data-target="#inSlider" data-slide-to="1"></li>-->
+    <!--</ol>-->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+
+
+                <div class="carousel-caption hebrew">
+                    <h2><span class="nextWorkshop">
+                        קורס אנגולר 2:
+                        </span></h2>
+
+                    <h3>
+                        <span class="dateTitle">תל אביב <br>
+
+                    <a href="http://angularworkshop.co.il/#tickets">
+הקליקו כאן לתאריכי הסדנה הקרובה
+                    </a>
+                        </span>
+                    </h3>
+
+
+                    <!--<p>-->
+                    <!--<a class="btn btn-lg btn-primary" href="#tickets" role="button">Book Your Tickets NOW!</a>-->
+                    <!--</p>-->
+                </div>
+                <!--<div class="carousel-image wow zoomIn">-->
+                <!--<img src="img/laptop.png" alt="laptop"/>-->
+                <!--</div>-->
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+        </div>
+    </div>
+
+</div>
+<div class=" text-center navy-section" style="margin: 0">
+    <h1>
+
+        בנו אפליקציית Angular2 שלמה מהבסיס, תוך שימוש בטכנולוגיות מתקדמות ו Best Practices
+    </h1>
+
+</div>
+
+<!--Who is the workshop for-->
+<section id="testimonials" class="navy-section testimonials" style="margin: 0">
+
+    <div class="container">
+        <div class="row">
+            <div class="text-center wow zoomIn mw800">
+                <!--<i class="fa fa-comment big-icon"></i>-->
+                <!--<h1>
+                    Who is it for?
+                </h1>-->
+                <div id="you">
+                    <p class="fs12">
+
+                        סדנת אנגולר2 שלנו מיועדת למפתחים שמעוניינים לצלול לתוך העולם המדהים של פיתוח פרונט-אנד בעזרת
+                        אנגולר2
+                    </p>
+
+
+                    <br>
+
+                    <div class="video-container">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/r4V72c6MYc8" frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <!--<div class="navy-line"></div>-->
+                    <h3>
+                        <mark>
+                            למי זה מיועד?
+                        </mark>
+                    </h3>
+                    <p>
+
+                        אם אתם מפתחים שעובדים כבר עם אנגולר 1 או ריאקט (React), בסדנה שלנו תקבלו את הכלים לשדרג
+                        אפליקציות אנגולר קיימות לאנגולר 2 - בעצם מה שנקרא "מיגרציה מאנגולר 1 לאנגולר 2".
+                    </p>
+
+                    <p>
+                        אם אתם מפתחים שעובדים בטכנולוגיות אחרות, למשל Java/.NET, בסדנה שלנו תקבלו את כל הכלים לבניית
+                        פרונט-אנד יעיל, חזק ומרשים.
+                        <!--If you're a-->
+                        <!--<mark>Java/.NET developer</mark>-->
+                        <!--, we believe that you are making-->
+                        <!--a <b>great decision</b>, <em>prepare yourself for a great ride.</em>-->
+                    </p>
+
+                    <p>
+                        <a href="http://angularworkshop.co.il/">
+                            לפרטים על הסדנה, תאריכים עדכניים, וסילבוס מלא
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--what will I learn-->
+<section class="what-learn container">
+    <div class="row ">
+        <div class="text-center col-lg-12">
+            <div class="navy-line"></div>
+            <h1>מי אנחנו?</h1>
+
+            <div class="mw540">
+                <p>
+                    אנחנו
+                    <b>
+                        <a href="http://misterbit.co.il/">
+                            misterBIT
+                        </a>
+                    </b>
+                    בית תוכנה והדרכה שמתמחה בפרוייקטים מורכבים מבוססי JavaScript ואנגולר. כל מה שאנחנו מלמדים מבוסס על
+                    צרכים של לקוחות שלנו מהשטח, ויכין
+                    אתכם בצורה הטובה ביותר לעבודה עם אנגולר על פרוייקטים קיימים בחברה או לבניית אפליקציות חדשות מבוססות
+                    Angular2.
+
+                </p>
+                <!--<div class="col-md-6 text-center  wow zoomIn">-->
+                <!--<img src="img/superAngular.jpg" alt="Super Angular" class="img-responsive">-->
+                <!--</div>-->
+            </div>
+            <br><br>
+
+            <div class="row container">
+                <div class="text-center col-lg-12">
+                    <p>
+                        ניתן להזמין הדרכות אצלכם בחברה - לפרטים נוספים
+                        <a href="mailto:admin@misterbit.co.il?Subject=Angular2%20workshop"
+                           target="_blank">
+                            צרו קשר
+                        </a>
+                    </p>
+                </div>
+            </div>
+</section>
+
+<!--The Trainer-->
+<!--<section id="staff" class="gray-section team">-->
+<!--<div class="container">-->
+<!--<div class="row m-b-lg">-->
+<!--<div class="col-lg-12 text-center">-->
+<!--<div class="navy-line"></div>-->
+<!--<h1>The Staff</h1>-->
+<!--&lt;!&ndash;<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col-sm-4 wow fadeInLeft">-->
+<!--<div class="team-member">-->
+<!--<img src="img/Roni.jpg" class="img-responsive img-circle img-small" alt="">-->
+<!--<h4><span class="navy">Roni</span> Krakover</h4>-->
+
+<!--<p>Frontend developer, Project manager and the Marketing lead at misterBIT</p>-->
+<!--<ul class="list-inline social-icon">-->
+<!--<li><a href="https://il.linkedin.com/in/ronikrakover" target="_blank"><i-->
+<!--class="fa fa-linkedin"></i></a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-sm-4">-->
+<!--<div class="team-member wow zoomIn">-->
+<!--<img src="img/YaronBiton.jpg" class="img-responsive img-circle" alt="">-->
+<!--<h4><span class="navy">Yaron</span> Biton</h4>-->
+
+<!--<p>Professional trainer ; misterBIT CTO ; Building the web for over 20 years ;-->
+<!--Deep understanding of web technologies, aspects and evolvement ;-->
+<!--Expert in building powerful, scalable and secure software ;-->
+<!--Mamram graduate-->
+<!--</p>-->
+<!--<ul class="list-inline social-icon">-->
+<!--<li><a href="http://il.linkedin.com/in/yaronbiton" target="_blank"><i-->
+<!--class="fa fa-linkedin"></i></a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-sm-4 wow fadeInRight">-->
+<!--<div class="team-member">-->
+<!--<img src="img/ZoharLederer.jpg" class="img-responsive img-circle img-small" alt="">-->
+<!--<h4><span class="navy">Zohar</span> Lederer</h4>-->
+
+<!--<p>Rock solid experience helping individuals, teams and organization to achieve excellence </p>-->
+<!--<ul class="list-inline social-icon">-->
+<!--<li><a href="https://il.linkedin.com/pub/zohar-lederer/9/44b/804" target="_blank"><i-->
+<!--class="fa fa-linkedin"></i></a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">-->
+<!--<p>-->
+<!--We are here to help you <b> make the best </b> of your coding time!-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+<section id="Logistics" class="navy-section" style="margin-top: 0">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center wow zoomIn">
+                <i class="fa fa-cubes big-icon"></i>
+
+                <h1>לוגיסטיקה</h1>
+
+                <div>
+                    <p>
+                        הסדנה מתקיימת בשפה העברית
+                    </p>
+
+                    <p>
+                        תתכוננו לקודד והרבה - יש להביא לפטופ! אין לכם לפטופ? צרו קשר וננסה לעזור בנושא.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="timeline gray-section">
+    <div class="container" id="syllabus">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>
+                    בין הנושאים הנלמדים
+                </h1>
+                <br>
+                <pre>
+
+TypeScript
+Observables
+Immutability
+Ecmascript 6
+Modular CSS & SASS
+Dependency injection
+Directives & Components
+Binding, events, forms, pipes, life cycle
+Routing & Navigation
+Stream programming with RxJS
+Observables, Promises, Using APIs
+
+
+                </pre>
+                סילבוס מלא ב
+                <a href="http://angularworkshop.co.il/">
+                    אתר הסדנה
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="featured-clients ">
+    <div class="container">
+        <div class="row">
+            <div class="navy-line"></div>
+            <div class="col-lg-12 text-center">
+                <!--<div class="navy-line"></div>-->
+                <h1 class="uppercase">
+                    <span class="navy">
+                        לקוחות
+                    </span></h1>
+            </div>
+        </div>
+        <div class="row companies-logos-container ptb3">
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/at&t.svg" class="img-responsive" alt="at&t logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/reskill-logo.png" class="img-responsive" alt="reskill logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/bmc.png" class="img-responsive" alt="bmc logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/ebay-logo.png" class="img-responsive " alt="ebay logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/footBoss.png" class="img-responsive" alt="footBoss logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/gemalto_logo.png" class="img-responsive" alt="gemalto logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/hp.png" class="img-responsive" alt="hp logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/inkodHypera-logo.png" class="img-responsive" alt="inkod Hypera logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/jivyGroup.png" class="img-responsive" alt="jivy Group logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/kaltura_logo.png" class="img-responsive" alt="kaltura logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/MSK_Logo.png" class="img-responsive" alt="MSK Logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/nice-actimize-logo.PNG" class="img-responsive" alt="actimize logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/poalim.png" class="img-responsive" alt="poalim logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/audioCodes_logo.png" class="img-responsive" alt="audioCodes logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/sapiens-logo.png" class="img-responsive" alt="sapiens logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/startapp-logo.png" class="img-responsive" alt="startapp logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/supersonic-logo.png" class="img-responsive" alt="supersonic logo">
+            </div>
+            <div class="col-xs-4 col-lg-2 grayscale">
+                <img src="img/clients/vtool-logo.png" class="img-responsive" alt="vtool logo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+            <p><strong>2016 &copy; misterBIT</strong><br/>
+                State of the art training, consulting & development.</p>
+            <a href="http://misterBIT.co.il" target="_blank">misterBIT website</a> |
+            <a href="http://coding-academy.org" target="_blank">Coding-Acedemy website</a>
+            <br>
+            tags: Angular2, אנגולר, אנגולר2, frontend, typescript, טייפסקריפט, learn angular, קורס אנגולר
+            , israel
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/inspinia.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-74395959-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

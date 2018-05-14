@@ -1,0 +1,6 @@
+.idea
+.vscode
+node_modules
+roadToAngular2.psd
+*.css
+/css
